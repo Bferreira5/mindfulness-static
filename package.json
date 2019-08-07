@@ -1,0 +1,33 @@
+{
+	"name": "mindfulness",
+	"version": "1.0.0",
+	"description": "Mindfulness is a app concept using the Skeleventy boilerplate built with Eleventy and tailwindCSS.",
+	"scripts": {
+		"dev": "ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve & gulp",
+		"build": "gulp build && eleventy --config=eleventy.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Bferreira5/minfulness-static.git"
+	},
+	"author": "Benjamin Ferreira",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.8.3",
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@fullhuman/postcss-purgecss": "^1.2.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"html-minifier": "^4.0.0",
+		"tailwindcss": "^1.0.5"
+	}
+}
