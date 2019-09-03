@@ -384,6 +384,7 @@ h3,
 h4,
 h5,
 h6,
+hr,
 figure,
 p,
 pre {
@@ -461,7 +462,7 @@ html {
  */
 
 hr {
-  border-width: 1px;
+  border-top-width: 1px;
 }
 
 /**
@@ -593,6 +594,7 @@ a {
 
 a:hover {
   color: #21183c;
+  color: #000;
 }
 
 .visually-hidden {
@@ -604,7 +606,7 @@ a:hover {
   height: auto;
   border: 0;
   clip: rect(0 0 0 0);
-  width: 1px;
+  width: .2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -612,6 +614,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin-top: 0;
   margin-bottom: 1.5rem;
+}
+
+.content {
+  margin-bottom: 2rem;
 }
 
 .content p {
