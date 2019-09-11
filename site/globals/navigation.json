@@ -1,20 +1,16 @@
 {
     "main": [
         {
-            "label": "Home",
+            "label": "Profile",
             "url": "/"
         },
         {
-            "label": "About",
-            "url": "/about/"
+            "label": "Record",
+            "url": "/record/"
         },
         {
-            "label": "Blog",
-            "url": "/blog/"
-        },
-        {
-            "label": "Contact",
-            "url": "/contact/"
+            "label": "Narratives",
+            "url": "/narratives/"
         }
     ]
 }
