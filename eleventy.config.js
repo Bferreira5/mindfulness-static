@@ -22,13 +22,13 @@ module.exports = eleventyConfig => {
     })
 
     // Collections
-    eleventyConfig.addCollection('blog', collection => {
-        return collection.getFilteredByTag('blog').reverse()
+    eleventyConfig.addCollection('narratives', collection => {
+        return collection.getFilteredByTag('narratives').reverse()
     })
 
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
-    eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
+    eleventyConfig.addLayoutAlias('narrative', 'layouts/narrative.njk')
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy("css")
