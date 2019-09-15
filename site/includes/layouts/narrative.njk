@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<main id="main" class="main bg-indigo-100 flex-row px-10 pt-32">
-    <section>
-        <h1>timeline</h1>
+<main id="main" class="main bg-indigo-100 flex-row pt-24">
+    
+    <section class="fixed w-full bg-indigo-400">
+        <h2>timeline</h2>
+        <div id="highlighted">Highlighted: 0</div>
+        {% include 'components/timeline.njk' %}
     </section>
 
     {# Start Event Thread #}
-    <article>
+    <article class="mt-12 p-10 bg-indigo-200 ">
         <header>
             <h1>Interview 2019</h1>
         <header>
@@ -16,7 +19,7 @@ layout: default
             {# start row #}
             <section id="001" class="flex">
                 {# speaker & timestamp #}
-                <div>
+                <div class="mr-8">
                     <span>timestamp</span>
                     <span>speaker</span>
                 </div>
@@ -26,7 +29,7 @@ layout: default
                     <div class="object mb-4">
                         <div id="words" class="words">
                             <p>If your element contents contains child elements (HTML) then the above solutions are not useful.</p>
-                            <p>Here's a <strong class="jsfiddle">jsfiddle</strong> I've come up with that preserves HTML (elements and   their attributes). The shortcoming of this small snippet is that if you have events binded to the element's contents then they will be lost since innerHTML is being reassigned to something else.</p>
+                            <p>Here's a <strong class="jsfiddle">jsfiddle</strong> I've come up with that preserves HTML (elements and their attributes). The shortcoming of this small snippet is that if you have events binded to the element's contents then they will be lost since innerHTML is being reassigned to something else.</p>
                             <p>This code does not require any special libraries (like <i>jQuery</i>).</p>
                         </div>
                     </div>
@@ -145,8 +148,6 @@ layout: default
                 </div>
             </section>
             {# /end row #}
-
-                <div id="highlighted">Highlighted: 0</div>
     </article>
 
 </main>

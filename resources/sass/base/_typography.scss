@@ -1,9 +1,13 @@
-
 //==========  Typography ==========//
 
 // headings
-h1, h2, h3, h4, h5, h6 {
-    @apply font-bold leading-tight mt-0 mb-6;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-bold leading-tight mt-0 mb-6;
 }
 
 // content
@@ -15,15 +19,15 @@ h1, h2, h3, h4, h5, h6 {
 	p {
 		@apply mb-8;
 
-        // intro paragraph
+		// intro paragraph
 		&.intro {
 			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light text-gray-500;
 
 			@screen md {
-                @apply text-3xl;
-            }
+				@apply text-3xl;
+			}
 		}
-    }
+	}
 }
 
 .word:hover {
@@ -33,5 +37,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .highlighted {
 	@apply text-blue-700 underline cursor-pointer;
-	
+
+}
+
+.timeline {
+	@apply overflow-scroll h-12 flex bg-indigo-100;
+
+	.timeline__section {
+		@apply px-3 self-center;
+
+		&:first-of-type {
+			@apply pl-20;
+
+			span {}
+		}
+
+		&:last-of-type {
+			@apply pr-20;
+
+			span {}
+		}
+	}
+
+	.timeline__marker {
+		@apply px-3;
+
+		span {
+			@apply border-2 rounded border-gray-900;
+
+		}
+
+		&:hover {
+
+			span {
+				@apply border-indigo-300;
+			}
+
+		}
+	}
+
 }
