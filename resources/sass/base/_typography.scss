@@ -60,11 +60,16 @@ h6 {
 	}
 
 	.timeline__marker {
-		@apply px-3;
+		@apply px-3 flex flex-col items-center;
+
+		.timeline__ticker {
+			@apply  bg-indigo-800 h-5;
+			width: 2px;
+
+		}
 
 		span {
-			@apply border-2 rounded border-gray-900;
-
+			@apply h-3;
 		}
 
 		&:hover {
