@@ -658,26 +658,26 @@ h6 {
 
 .timeline {
   overflow: scroll;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   background-color: #ebf4ff;
 }
 
-.timeline .timeline__section {
+.timeline__section {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   align-self: center;
 }
 
-.timeline .timeline__section:first-of-type {
+.timeline__section:first-of-type {
   padding-left: 5rem;
 }
 
-.timeline .timeline__section:last-of-type {
+.timeline__section:last-of-type {
   padding-right: 5rem;
 }
 
-.timeline .timeline__marker {
+.timeline__marker {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   display: flex;
@@ -685,18 +685,32 @@ h6 {
   align-items: center;
 }
 
-.timeline .timeline__marker .timeline__ticker {
-  background-color: #434190;
+.timeline__marker .timeline__ticker {
+  background-color: #a0aec0;
   height: 1.25rem;
-  width: 2px;
+  width: 0.25rem;
+  margin-top: 0.25rem;
+  border-radius: 0.25rem;
 }
 
-.timeline .timeline__marker span {
-  height: 0.75rem;
+.timeline__marker span {
+  font-size: 1.25rem;
+  height: 1.25rem;
+  color: #eb5286;
+  line-height: 1;
 }
 
-.timeline .timeline__marker:hover span {
-  border-color: #a3bffa;
+.timeline__marker:hover .timeline__ticker {
+  width: 0.25rem;
+  background-color: #b83280;
+}
+
+.timeline__marker.timeline__marker--active .timeline__ticker {
+  background-color: #1a202c;
+}
+
+.timeline__marker.timeline__marker--inactive .timeline__ticker {
+  background-color: #e2e8f0;
 }
 
 .container {
