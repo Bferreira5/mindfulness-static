@@ -12,9 +12,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
-      black: '#000',
-      white: '#fff',
-      beige:'#f4f0d5',
+      black: '#2a3f51',
+      white: '#fffdf7',
+      beige:'#f7f5e5',
+      iron:'#b0bac2',
 
       gray: {
         100: '#f7fafc',
@@ -222,6 +223,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Inter',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

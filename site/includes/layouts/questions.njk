@@ -1,4 +1,25 @@
 ---
 layout: default
 ---
-<h1>Questions</h1>   
+<main id="main" class="main flex">
+    <aside class="w-1/4 p-6">
+        <a href="/narratives/narratives-1/timeline/">Back</a>
+        <h1>Answer Questions</h1>
+        <hr/>
+        <p>Based on your current narrative, your care team wants to ask a few more questions to better understand you.</p>
+    </aside>
+    <section class="w-3/4 h-screen min-h-full overflow-y-auto shadow-xl p-6 bg-white">
+        <div class="min-h-full">
+           <h2 class="text-black text-4xl">{{ question }}</h2>
+           <h3>— Doctor Wanda G.</h3>
+           {% include "components/question-inputs.njk" %} 
+        </div>
+    </section>
+    <div class="fixed bottom-0 right-0 w-3/4 py-5 px-6 bg-white border-t-2 border-iron">
+        <a class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Button</a>
+        <a class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Button</a>
+        
+        
+        
+    </div>
+</main>
