@@ -8,18 +8,16 @@ layout: default
         <hr/>
         <p>Based on your current narrative, your care team wants to ask a few more questions to better understand you.</p>
     </aside>
-    <section class="w-3/4 h-screen min-h-full overflow-y-auto shadow-xl p-6 bg-white">
+    <section class="w-3/4 h-screen min-h-full overflow-y-auto shadow-xl p-12 bg-white">
         <div class="min-h-full">
-           <h2 class="text-black text-4xl">{{ question }}</h2>
-           <h3>— Doctor Wanda G.</h3>
-           {% include "components/question-inputs.njk" %} 
+            <h2 class="text-black text-4xl">{{ question }}</h2>
+            <h3>— Doctor Wanda G.</h3>
+            {% include "components/question-inputs.njk" %}
         </div>
     </section>
-    <div class="fixed bottom-0 right-0 w-3/4 py-5 px-6 bg-white border-t-2 border-iron">
-        <a class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Button</a>
-        <a class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Button</a>
-        
-        
-        
+    <div class="fixed flex justify-between bottom-0 right-0 w-3/4 py-5 px-6 bg-white border-t-2 border-iron">
+        <a class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Previous</a>
+        <div class="w-1/2 bg-iron">. . . .</div>
+        <a class=" bg-blue-400 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Next</a>
     </div>
 </main>
