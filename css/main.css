@@ -653,15 +653,21 @@ h6 {
 
 .highlighted {
   color: #2b6cb0;
+  background-color: #fefcbf;
   text-decoration: underline;
   cursor: pointer;
+  border-radius: 0.25rem;
 }
 
 .timeline {
   overflow: scroll;
   height: 4rem;
   display: flex;
-  background-color: #ebf4ff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #fffdf7;
+  border-top-width: 2px;
+  border-color: #a3bffa;
 }
 
 .timeline__section {
@@ -671,11 +677,11 @@ h6 {
 }
 
 .timeline__section:first-of-type {
-  padding-left: 5rem;
+  padding-left: 0.75rem;
 }
 
 .timeline__section:last-of-type {
-  padding-right: 5rem;
+  padding-right: 0.75rem;
 }
 
 .timeline__marker {
@@ -688,14 +694,14 @@ h6 {
 
 .timeline__marker .timeline__ticker {
   background-color: #a0aec0;
-  height: 1.25rem;
+  height: 0.25rem;
   width: 0.25rem;
   margin-top: 0.25rem;
   border-radius: 0.25rem;
 }
 
 .timeline__marker span {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   height: 1.25rem;
   color: #eb5286;
   line-height: 1;

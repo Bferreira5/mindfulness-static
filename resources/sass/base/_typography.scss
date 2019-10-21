@@ -42,12 +42,12 @@ h6 {
 }
 
 .highlighted {
-	@apply text-blue-700 underline cursor-pointer;
+	@apply text-blue-700 bg-yellow-200 underline cursor-pointer rounded;
 
 }
 
 .timeline {
-	@apply overflow-scroll h-16 flex bg-indigo-100;
+	@apply overflow-scroll h-16 flex rounded-lg shadow-lg bg-white border-t-2 border-indigo-300;
 	
 }
 
@@ -55,11 +55,11 @@ h6 {
 	@apply px-3 self-center;
 
 	&:first-of-type {
-		@apply pl-20;
+		@apply pl-3;
 	}
 
 	&:last-of-type {
-		@apply pr-20;
+		@apply pr-3;
 	}
 }
 
@@ -67,13 +67,13 @@ h6 {
 	@apply px-3 flex flex-col items-center;
 
 	.timeline__ticker {
-		@apply bg-gray-500 h-5 w-1 mt-1 rounded;
+		@apply bg-gray-500 h-1 w-1 mt-1 rounded;
 
 	}
 
 
 	span {
-		@apply text-xl h-5  text-pink-500 leading-none;
+		@apply text-sm h-5 text-pink-500 leading-none;
 	}
 
 	&:hover {
