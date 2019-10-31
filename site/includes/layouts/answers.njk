@@ -31,6 +31,24 @@ layout: default
                             <p>Here's a <strong class="jsfiddle">jsfiddle</strong> I've come up with that preserves HTML (elements and their attributes). The shortcoming of this small snippet is that if you have events binded to the element's contents then they will be lost since innerHTML is being reassigned to something else.</p>
                             <p>This code does not require any special libraries (like <i>jQuery</i>).</p>
                         </div>
+                        <ul>
+                            {% for item in export.responses %}
+
+                                <li class="mr-4 mb-0">
+
+                                    {% if item.type === "number" %}
+                                        <b>it worked</b>
+                                        <ul>
+                                            {{ item.answer.$numberInt }}
+                                        </ul>
+                                    {% elif item.type === "text" %}
+                                        {{ item.answer }}
+                                    {% endif %}
+
+                                </li>
+
+                            {% endfor %}
+                        </ul>
                     </div>
 
                 </article>
